@@ -1,0 +1,119 @@
+%This is a LaTeX template for homework assignments
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+
+\begin{document}
+
+\section*{Swarm Software Team Task}
+
+\subsection*{Instructions} %Enter instruction text here
+The following tasks would be done along with your mentors {\bf Pranit Bauva}, {\bf Spandan Kumar Sahu}, {\bf Shivang Agrawal}, {\bf Amegh Bhavsar}, {\bf Anubhav Jain} and {\bf Srishti Sammader}. All of the tasks need to be done in our Gymkhana upper lab and everyone has to bring their own laptops. The rest of the hardware (if required) will be available in the lab. Apart from these, we will have lots of discussion which will help you in doing the tasks. {\newline}{\newline}
+{\bf Note:} If you face any problem in understanding the topic, don't just copy the code, but instead ask any of the mentor to explain it. We would love to explain you the topics and we will definitely hate it if we see directly copied code from the internet (although we have tried our best that these things won't be directly available online).
+{\newline}{\newline}
+{\bf Timings:} 25th Feburary to 12th March from 8.00pm to 12.00 midnight
+
+\subsection*{Section A}
+
+\begin{enumerate}%starts the numbering
+
+\item Install {\bf Ubuntu 16.04} if you don't have any other Linux distribution.
+{\newline}{\newline}
+{\bf Note:} You can dual boot also but having a clean installation is always better.
+
+\item Revise all of your Winter workshop contents in Image Processing or Autonomous Robotics.
+{\newline}{\newline}
+{\bf Note:} If you haven't attended the winter workshop, then it is a {\bf must} to get a good idea of all the concepts taught. Please contact any of the seniors for resources where you can study those.
+
+\item Learn {\bf Git} because we only use git for all of our source control needs.{\newline}{\newline}
+{\bf Resources:}
+    \begin{itemize}
+        \item \href{https://www.udacity.com/course/how-to-use-git-and-github--ud775}{Course on Udacity}
+        \item \href{https://git-scm.com/}{Almost official website for git}
+        \item \href{https://help.github.com/articles/good-resources-for-learning-git-and-github/}{Github help for git}
+        \item \href{https://gun.io/blog/how-to-github-fork-branch-and-pull-request/www-cs-students.stanford.edu/~blynn/gitmagic/ch08.html}{How to GitHub: Fork, Branch, Track, Squash and send Pull Requests}
+        \item \href{http://www-cs-students.stanford.edu/~blynn/gitmagic/ch08.html}{Stanford's Git Magic}
+        \item \href{http://gitolite.com/gcs.html}{Git's internal concepts simplified}
+        \item \href{http://stackoverflow.com/questions/783811/getting-git-to-work-with-a-proxy-server}{Getting git to work under proxy}
+        \item \href{https://www.sbf5.com/~cduan/technical/git/}{Understanding git conceptually}
+        \item \href{http://stackoverflow.com/questions/261557/what-do-i-need-to-read-to-understand-how-git-works}{Getting to know git internally}
+        \item \href{http://rypress.com/tutorials/git/index}{RyPress' Git tutorial}
+    \end{itemize}
+
+\item Include your name and photo in our website. Please see \href{https://github.com/Swarm-IITKgp/Swarm-IITKgp.github.io/pull/36/files}{a demo PR of how it was done last year}.
+{\newline}{\newline}
+{\bf Please} be very careful while sending this and do this only after you have a good understanding of git. We {\bf won't} merge PRs which aren't upto the mark.
+
+\item Learn about header files, how to include and compile with the header files (especially make and cmake because we use both of these extensively for our build systems). Learn C++ and OOP with the important libraries for File I/O, threading, time, string, et al.{\newline}{\newline}
+{\bf Resouces:}
+
+    \begin{itemize}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbWE1VMFl2LW9yTHc}{The C Programming Language by Dennis Ritchie and Brian Kernighan}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbaFZQZ0o0cDVfUnc}{Dynamic and Static Memory}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbdzNyNVFpZUVZNEU}{Modern C}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbOTU2R0VqZmhFYm8}{C++ Language Tutorial by cplusplus.com}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbWks4NTczcGxMalU}{C++ For Dummies}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbY3hjSTVoVFJKWVE}{C++ Primer Plus}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbcXpHeHliYVVMa00}{Programming and Practise of C++ by Bjarne Stroustrup}
+        \item \href{https://drive.google.com/open?id=0B79CUUbZuqcbRXk2cDRYd01HMkU}{Effective STL}
+        \item \href{http://www.gnu.org/software/make/manual/make.html}{GNU's offial make guide}
+        \item \href{http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/}{A simple Makefile tutorial}
+        \item \href{http://www.cs.umd.edu/class/fall2002/cmsc214/Tutorial/makefile.html}{Makefiles}
+        \item \href{http://mrbook.org/blog/tutorials/make/}{Makefiles: A tutorial by example}
+        \item \href{https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html}{Using Make and writing Makefiles}
+    \end{itemize}
+
+\item Learn to use GDB. GDB stands for GNU Debugger which is extremely helpful to debug your C/C++ codes.{\newline}{\newline}
+{\bf Resources:}
+
+    \begin{itemize}
+        \item \href{https://www.gnu.org/software/gdb/documentation/}{The official GDB documentation}
+        \item \href{https://sourceware.org/gdb/onlinedocs/gdb/}{Debugging with GDB - Sourceware}
+        \item \href{http://cs.baylor.edu/~donahoo/tools/gdb/tutorial.html}{How to Debug Using GDB}
+        \item \href{http://www.delorie.com/gnu/docs/gdb/gdb_toc.html}{Debugging with GDB - Delorie}
+        \item \href{https://www.cs.cmu.edu/~gilpin/tutorial/}{Debugging Under Unix}
+    \end{itemize}
+
+\item Design a multi-threaded merge sort. Get the number of threads by reading an environment variable (keep this in powers of two just for simplicity). Create a file with 10,000 randomly generated ints and take it in as input for the program. Also do the performance analysis on whether the higher number of threads is better, always better, depends or exactly same.
+{\newline}{\newline}
+{\bf Note:}
+Make sure you use mutex properly to get accurate analysis. Using mutex will greatly describe your understanding and we will judge on basis of this. If you just try and copy the code, we will know about it easily.{\newline}{\newline}
+{\bf Resources:}
+
+    \begin{itemize}
+        \item \href{https://courses.engr.illinois.edu/cs241/fa2010/ppt/10-pthread-examples.pdf}{Slides on Pthread from Illinois}
+        \item \href{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/lecture-notes/MIT6_087IAP10_lec12.pdf}{MIT's Slides for Multi threading}
+        \item \href{https://computing.llnl.gov/tutorials/pthreads/}{POSIX Threads Programming}
+        \item \href{http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/Sorting/mergeSort.htm}{Merge Sort Tutorial - Kent University}
+        \item \href{http://sc.tamu.edu/help/general/unix/vars.html}{Shell variables and Environment Variables}
+        \item \href{http://www0.cs.ucl.ac.uk/staff/ucacbbl/getenv/}{Getting Environment varibles inside C code}
+    \end{itemize}
+
+\item Develop a server client on C++ to send data between two computers on network. Extend this to use Google’s protobuf to send the data. Also see the performance benefits and various other analytics. Compare the same with JSON file format as well as XML formats and then suggest which one would be better to send data by doing the performance analytics. We can then prepare a blog post and describe all the things that we learned from this.
+{\newline}{\newline}
+{\bf Resources:}
+    \begin{itemize}
+        \item \href{http://beej.us/guide/bgnet/}{Beej's Guide to Networking}
+        \item \href{http://www.linuxhowtos.org/C_C++/socket.htm}{Sockets Tutorial - Linux HowTOs}
+        \item \href{http://www.cs.rpi.edu/~moorthy/Courses/os98/Pgms/socket.html}{Sockets Tutorial - RPI University}
+        \item \href{http://www.thegeekstuff.com/2011/12/c-socket-programming/}{C Socket Programming - The Geek Stuff}
+        \item \href{https://developers.google.com/protocol-buffers/docs/overview}{Official Google docs for ProtoBuf}
+        \item \href{https://github.com/nlohmann/json}{JSON for Modern C++}
+        \item \href {https://github.com/open-source-parsers/jsoncpp}{Linking JSON in C++}
+        \item \href{http://www.codesynthesis.com/products/xsd/}{XML for C++ - Code Synthesis}
+        \item \href{http://xerces.apache.org/xerces-c/}{Xerces XML Parser for C++}
+        \item \href{http://www.xml.com/pub/a/1999/11/cplus/}{XML Programming with C++}
+        \item \href{http://stackoverflow.com/questions/170686/what-is-the-best-open-xml-parser-for-c}{Which XML parser should you use?}
+    \end{itemize}
+
+\end{enumerate}%ends the numbering
+
+\end{document}
