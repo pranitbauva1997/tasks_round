@@ -1,0 +1,54 @@
+%This is a LaTeX template for homework assignments
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+
+\begin{document}
+
+\section*{Swarm Embedded Team Task}
+
+\subsection*{Instructions} %Enter instruction text here
+The following tasks would be done along with your mentors {\bf Amit Kumar Pathak}, {\bf Spandan Kumar Sahu}, {\bf Aman Chandra}, {\bf Shivang Agrawal} and {\bf Pranit Bauva}. All of the tasks need to be done in our Gymkhana upper lab and everyone has to bring their own laptops. The rest of the hardware (if required) will be available in the lab. Apart from these, we will have lots of discussion which will help you in doing the tasks. You will have to write a documentation about all the tasks describing what all approaches you took and why you chose one approach over another one. You will have to submit this documentation along with the working codes to successfully clear the task round. {\newline}{\newline}
+{\bf Note:} If you face any problem in understanding the topic, don't just copy the code, but instead ask any of the mentor to explain it. We would love to explain you the topics and we will definitely hate it if we see directly copied code from the internet (although we have tried our best that these things won't be directly available online).
+{\newline}{\newline}
+{\bf Timings:} 27th February to 4th March from 8.00pm to 12.00 midnight
+{\newline}{\newline}
+{\bf Note:} You have to submit all of this in a zip file email to {\newline}{\bf  swarmiitkgp@gmail.com} by {\bf 5th March 2017 midnight} which is a {\bf hard deadline} and we {\bf won't} consider your submissions after that deadline.
+
+\begin{enumerate}%starts the numbering
+
+\item Understand the basic layout of swarm bot's architecture. Understand that there will be two levels of control, the higher level being handled by the Raspberry Pi while the lower level one by Arduino. Understand the difference between the different ardunio's like Uno, Mega, Mini, Micro, et al.
+{\newline}{\newline}
+{\bf Note:} Recruits who don't have an idea of basic embedded things or those who need to revise the concepts of Winter Workshop, should contact any of the mentors present.
+
+\item Implement the following tasks on Arduino.
+    \begin{itemize}
+        \item Interface Sharp sensors, get the value to display on the Serial monitor. Understand the working principle behind Sharp. Mapping of one Sharp by a group of 3 students each.
+        \item Motor control : Make motor driver circuit using L293D. Basic soldering tasks.
+        \item Voltage Divider circuit : Voltage divider circuit design, along with computation of the maximum ampearage that might be needed. Accordingly, suggest an alternate to LM7805. ( The sum of max currents of Pi and Arduino and sensors is expected to cross the value that 7805 can support).
+        \item Applying PWM on the motors through Arduino.
+        \item Applying and tuning PID on the RPM of the motors. Calculate the max RPM of each motor, and then apply PID to run at different levels of RPM. ( for example. if the max RPM is 300rpm, set the PID to run on 120rpm, 200rpm and 240rpm, etc.)
+    \end{itemize}
+
+\item Communication between Arduino and Pi
+    \begin{itemize}
+        \item Basic idea of Raspberry Pi, Beaglebone, and the justifications behind using Raspberry Pi. Emphasis the features of Raspberry Pi.
+        \item Serial communication between Pi and Arduino.
+        \item Write a C++/ Python code, to be executed on Pi, that will make the bot, move in forward followed by backward, left turn, right turn, clockwise spin, anti-clockwise spin ( time/duration will be the only parameters that will be passed to these functions). Create a corresponding header file for it, so that the serial communication be handled for once and for all. For any tasks that we undertake further, we should be able to simply need to include the header file, and we will have the forward, backward and other locomotion functions available.
+        {\newline}{\newline}
+        {\bf Note:} For left and right turn, you'll also need the radius of curvature to take in as input.
+    \end{itemize}
+
+\item {\bf Bonus Task:} Clone the Swarm bot.
+
+\end{enumerate}%ends the numbering
+
+\end{document}
